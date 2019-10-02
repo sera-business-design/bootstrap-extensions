@@ -1,0 +1,23 @@
+{
+  "name": "@serabusinessdesign/bootstrap-extensions",
+  "version": "0.1.0",
+  "description": "Common utilities for Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/serabusinessdesign/bootstrap-extensions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/serabusinessdesign/bootstrap-extensions#readme",
+  "peerDependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

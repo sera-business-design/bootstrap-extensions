@@ -1,0 +1,10 @@
+/*
+ * Link variants (e.g. ".link-success")
+ */
+@mixin link-variant($color) {
+  color: $color;
+
+  @include hover {
+    color: darken($color, 15%);
+  }
+}

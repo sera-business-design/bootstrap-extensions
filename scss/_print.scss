@@ -1,0 +1,30 @@
+@media print {
+  // Prevent breaking inside form elements
+  //section,
+  fieldset,
+  label,
+  .form-group {
+    page-break-inside: avoid;
+  }
+
+  // Render print as 'sm'
+  // Adapted from: https://gist.github.com/donnierayjones/6fd9802d992b2d8d6cfd
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      flex: 0 0 #{percentage($i/12)};
+      max-width: #{percentage($i/12)};
+    }
+  }
+
+  .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%; // Reset earlier grid tiers
+  }
+}
