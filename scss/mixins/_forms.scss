@@ -1,0 +1,31 @@
+/*
+ * Link variants (e.g. ".form-control-success")
+ */
+$form-control-border-level: $table-border-level !default;
+
+@mixin form-control-variant($color) {
+  $background: theme-color-level($color, $alert-bg-level);
+  $border: theme-color-level($color, $form-control-border-level);
+  $variant-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(theme-color($color), .25);
+
+  color: theme-color-level($color, $alert-color-level);
+  @include gradient-bg($background);
+  border-color: $border;
+
+  &::placeholder {
+    color: theme-color-level($color, -5)
+  }
+
+  &:focus {
+    color: theme-color-level($color, $alert-color-level);
+    background-color: $background;
+    border-color: theme-color($color);
+    outline: 0;
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: $input-box-shadow, $variant-focus-box-shadow;
+    } @else {
+      box-shadow: $variant-focus-box-shadow;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import "mixins/forms";
+
+@each $color, $value in $theme-colors {
+  .form-control-#{$color} {
+    @include form-control-variant($color);
+  }
+}

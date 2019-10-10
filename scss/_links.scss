@@ -1,3 +1,5 @@
+@import "mixins/link-variant";
+
 @each $color, $value in $theme-colors {
   a.link-#{$color} {
     @include link-variant($value);
