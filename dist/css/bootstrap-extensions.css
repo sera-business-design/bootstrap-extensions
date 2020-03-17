@@ -1,4 +1,47 @@
 /*
+ * Link variants (e.g. ".link-success")
+ */
+a.link-primary {
+  color: #007bff; }
+  a.link-primary:hover {
+    color: #0056b3; }
+
+a.link-secondary {
+  color: #6c757d; }
+  a.link-secondary:hover {
+    color: #494f54; }
+
+a.link-success {
+  color: #28a745; }
+  a.link-success:hover {
+    color: #19692c; }
+
+a.link-info {
+  color: #17a2b8; }
+  a.link-info:hover {
+    color: #0f6674; }
+
+a.link-warning {
+  color: #ffc107; }
+  a.link-warning:hover {
+    color: #ba8b00; }
+
+a.link-danger {
+  color: #dc3545; }
+  a.link-danger:hover {
+    color: #a71d2a; }
+
+a.link-light {
+  color: #f8f9fa; }
+  a.link-light:hover {
+    color: #cbd3da; }
+
+a.link-dark {
+  color: #343a40; }
+  a.link-dark:hover {
+    color: #121416; }
+
+/*
  * Link variants (e.g. ".form-control-success")
  */
 .form-control-primary {
@@ -168,4 +211,54 @@
     border-color: #343a40;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.25); }
+
+@media print {
+  fieldset,
+  label,
+  .form-group {
+    page-break-inside: avoid; }
+  .col-sm-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+  .col-sm-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .col-sm-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .col-sm-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-sm-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+  .col-sm-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .col-sm-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+  .col-sm-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%; }
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%; } }
 /*# sourceMappingURL=bootstrap-extensions.css.map */
