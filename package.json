@@ -10,14 +10,11 @@
     "dist": "npm-run-all css:compile css:prefix css:minify",
     "publish": "np"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/serabusinessdesign/bootstrap-extensions.git"
-  },
+  "repository": "github:sera-business-design/bootstrap-extensions",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/serabusinessdesign/bootstrap-extensions#readme",
+  "homepage": "https://github.com/sera-business-design/bootstrap-extensions",
   "sass": "scss/bootstrap-extensions.scss",
   "peerDependencies": {
     "bootstrap": "^4.6.1"
