@@ -4,7 +4,6 @@
   "description": "Common utilities for Bootstrap 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "css:compile": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css:prefix": "postcss --config postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css:minify": "cd dist/css && cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output bootstrap-extensions.min.css bootstrap-extensions.css",
