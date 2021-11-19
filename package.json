@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css:compile": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css:prefix": "postcss --config postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
-    "css:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-extensions.min.css dist/css/bootstrap-extensions.css",
+    "css:minify": "cd dist/css && cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output bootstrap-extensions.min.css bootstrap-extensions.css",
     "dist": "npm-run-all css:compile css:prefix css:minify"
   },
   "repository": {
@@ -20,15 +20,16 @@
   "homepage": "https://bitbucket.org/serabusinessdesign/bootstrap-extensions#readme",
   "sass": "scss/bootstrap-extensions.scss",
   "peerDependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.6.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.4",
-    "bootstrap": "^4.3.1",
-    "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.13.1",
+    "autoprefixer": "^10.4.0",
+    "bootstrap": "^4.6.1",
+    "clean-css-cli": "^5.4.2",
+    "node-sass": "^6.0.1",
     "node-sass-package-importer": "^5.3.2",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.3"
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2"
   }
 }
