@@ -8,7 +8,8 @@
     "css:compile": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css:prefix": "postcss --config postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css:minify": "cd dist/css && cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output bootstrap-extensions.min.css bootstrap-extensions.css",
-    "dist": "npm-run-all css:compile css:prefix css:minify"
+    "dist": "npm-run-all css:compile css:prefix css:minify",
+    "publish": "np"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "clean-css-cli": "^5.4.2",
     "node-sass": "^6.0.1",
     "node-sass-package-importer": "^5.3.2",
+    "np": "^7.5.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.2"
