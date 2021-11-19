@@ -7,8 +7,7 @@
     "css:compile": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css:prefix": "postcss --config postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css:minify": "cd dist/css && cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output bootstrap-extensions.min.css bootstrap-extensions.css",
-    "dist": "npm-run-all css:compile css:prefix css:minify",
-    "publish": "np"
+    "dist": "npm-run-all css:compile css:prefix css:minify"
   },
   "repository": "github:sera-business-design/bootstrap-extensions",
   "keywords": [],
